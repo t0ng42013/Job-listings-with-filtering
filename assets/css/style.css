@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #f0fafb;
+}
+
+header {
+  background-color: #5da5a4;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: -81px;
+}
+
+.filter {
+  background-color: #fff;
+  width: 80%;
+  height: 81px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.filter__list {
+  color: #5da5a4;
+  background-color: #5da5a432;
+  padding: 8px;
+  padding-right: 0;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.filter__list ul li span {
+  background-color: #5da5a4;
+  color: #fff;
+  padding: 10px;
+  border-radius: 0 8px 8px 0;
+  margin-left: 5px;
+}
+.filter__list ul li span:hover {
+  background-color: #294140;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.filter__clear {
+  cursor: pointer;
+  color: #5da5a4;
+}
+.filter__clear:hover{
+    text-decoration: underline;
+}
+/*  ****************** */
+
+.list {
+  width: 80%;
+  margin: auto;
+}
+
+.card__container {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 5px #5da5a4;
+}
+
+.card__user,
+.user__company {
+  display: flex;
+  align-items: center;
+}
+
+.card__user__info {
+  margin-left: 20px;
+}
+
+/* .user__company{
+display: flex;
+align-items: center;
+} */
+.user__company__name {
+  color: #5da5a4;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.user__company__not {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user__company__new {
+  border-radius: 20px;
+  background-color: #5da5a4;
+  padding: 5px 10px;
+}
+.user__company__feat {
+  border-radius: 20px;
+  background-color: black;
+  padding: 5px 10px;
+}
+.user__position {
+  color: #294140;
+  margin: 10px 0;
+}
+.user__position:hover {
+  cursor: pointer;
+  color: #5da5a4;
+  transition: 0.3s ease-in-out;
+}
+
+.user__job {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(185, 174, 174);
+}
+.user__contract {
+  position: relative;
+  padding: 0 15px;
+}
+.user__contract::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 30%;
+  left: 0;
+  background-color: silver;
+  border-radius: 50%;
+}
+.user__contract::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 30%;
+  right: 0;
+  background-color: silver;
+  border-radius: 50%;
+}
+
+/*  **************************  */
+
+.card__tools,
+.card__tools ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card__tools li {
+  background-color: #5da5a43a;
+  color: #5da5a4;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 700;
+}
+.card__tools li:hover {
+  background-color: #5da5a4;
+  color: #fff;
+  cursor: pointer;
+}
