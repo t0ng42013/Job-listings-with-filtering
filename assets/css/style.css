@@ -9,6 +9,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: #f0fafb;
 }
 
@@ -35,14 +36,23 @@ header {
   border-radius: 8px;
 }
 
-.filter__list {
+.filter__list ul{
+  display: flex;
+  gap: 20px;
+  width: 70%;
+  
+}
+.filter__list li {
+  font-weight: 700;
   color: #5da5a4;
   background-color: #5da5a432;
-  padding: 8px;
   padding-right: 0;
   border-radius: 8px;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
 }
+
 .filter__list ul li span {
   background-color: #5da5a4;
   color: #fff;
@@ -178,4 +188,12 @@ align-items: center;
   background-color: #5da5a4;
   color: #fff;
   cursor: pointer;
+}
+
+.active{
+  background-color: #294140 !important;
+  color: #fff !important;
+}
+.inactive{
+  display: none !important;
 }
